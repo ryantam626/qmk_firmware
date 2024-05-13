@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,    KC_Q,        KC_W,        KC_E,         KC_R,    KC_T, KC_LPRN,      KC_RPRN   , KC_Y   , KC_U    , KC_I    , KC_O   , KC_P    , LT(1,KC_BSLS) ,
 LT(1,KC_ESCAPE),    KC_A,        KC_S,        KC_D,         KC_F,    KC_G,                           KC_H   , KC_J    , KC_K    , KC_L   , KC_SCLN , KC_QUOTE      ,
   KC_LEFT_SHIFT,    KC_Z,        KC_X,        KC_C,         KC_V,    KC_B, KC_LBRC,      KC_RBRC   , KC_N   , KC_M    , KC_COMMA, KC_DOT , KC_SLASH, KC_RIGHT_SHIFT,
-        _______, _______, KC_LEFT_GUI, KC_LEFT_ALT, KC_LEFT_CTRL,                                             KC_MINUS, KC_EQUAL, _______, _______ , _______       ,
+          MO(2), _______, KC_LEFT_GUI, KC_LEFT_ALT, KC_LEFT_CTRL,                                             KC_MINUS, KC_EQUAL, _______, _______ , _______       ,
 
                                                                   _______, _______,      _______   , _______,
                                                                            KC_HOME,      KC_PAGE_UP,
@@ -53,11 +53,20 @@ _______, _______, _______, _______, _______,                                    
                                              _______, _______,      _______, _______  ,
                                                       _______,      _______,
                                     _______, _______, _______,      _______, _______  , _______
+),
+[2] = LAYOUT_ergodox_pretty(
+_______, _______, _______, _______, _______, _______, _______,      _______, _______  , KC_NUM , KC_PSLS , KC_PAST , KC_PMNS, _______  ,
+_______, _______, _______, _______, _______, _______, _______,      _______, _______  , KC_KP_7, KC_KP_8 , KC_KP_9 , KC_PPLS, _______  ,
+_______, _______, _______, _______, _______, _______,                        _______  , KC_KP_4, KC_KP_5 , KC_KP_6 , KC_PPLS, _______  ,
+_______, _______, _______, _______, _______, _______, _______,      _______, _______  , KC_KP_1, KC_KP_2 , KC_KP_3 , KC_PENT, _______  ,
+_______, _______, _______, _______, _______,                                            KC_KP_0, KC_KP_0 , KC_PDOT , KC_PENT, _______  ,
+
+                                             _______, _______,      _______, _______  ,
+                                                      _______,      _______,
+                                    _______, _______, _______,      _______, _______  , _______
 )
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
-
-
