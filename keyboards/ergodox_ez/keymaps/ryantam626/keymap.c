@@ -5,8 +5,6 @@
 //  RGB_SLD = EZ_SAFE_RANGE,
 //};
 
-#define KC_LCAG LALT(LCTL(KC_LEFT_GUI))
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
@@ -40,7 +38,7 @@ LT(1,KC_ESCAPE),    KC_A,        KC_S,        KC_D,         KC_F,    KC_G,      
 
                                                                   _______, _______,      _______   , _______,
                                                                            KC_HOME,      KC_PAGE_UP,
-                                                        KC_SPACE, KC_LCAG,  KC_END,      KC_PGDN   , KC_LBRC, KC_ENTER
+                                                        KC_SPACE,  KC_F24,  KC_END,      KC_PGDN   , KC_LBRC, KC_ENTER
 ),
 
 [1] = LAYOUT_ergodox_pretty(
